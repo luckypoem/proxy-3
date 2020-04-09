@@ -227,7 +227,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	var addr, config string
-	flag.StringVar(&addr, "addr", "0.0.0.0:6666", "Which Addr the proxy listens")
+	flag.StringVar(&addr, "addr", "127.0.0.1:7777", "Which Addr the proxy listens")
 	flag.StringVar(&config, "config", "config.json", "Config json path")
 	flag.Parse()
 
